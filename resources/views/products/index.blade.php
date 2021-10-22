@@ -16,9 +16,6 @@
         <table class="w-full border">
             <thead>
             <tr class="bg-gray-50 border-b">
-                <th class="border-r p-2">
-                    <input type="checkbox">
-                </th>
                 <th class="p-2 border-r cursor-pointer text-sm font-thin text-gray-500">
                     <div class="flex items-center justify-center">
                         ID
@@ -61,6 +58,30 @@
                 </th>
                 <th class="p-2 border-r cursor-pointer text-sm font-thin text-gray-500">
                     <div class="flex items-center justify-center">
+                        Descripción
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
+                        </svg>
+                    </div>
+                </th>
+                <th class="p-2 border-r cursor-pointer text-sm font-thin text-gray-500">
+                    <div class="flex items-center justify-center">
+                        Cantidad
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
+                        </svg>
+                    </div>
+                </th>
+                <th class="p-2 border-r cursor-pointer text-sm font-thin text-gray-500">
+                    <div class="flex items-center justify-center">
+                        Precio Venta
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
+                        </svg>
+                    </div>
+                </th>
+                <th class="p-2 border-r cursor-pointer text-sm font-thin text-gray-500">
+                    <div class="flex items-center justify-center">
                         Action
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
@@ -71,31 +92,31 @@
             </thead>
             <tbody>
             <tr class="bg-gray-100 text-center border-b text-sm text-gray-600">
-                <td class="p-2 border-r">
-                    <input type="checkbox">
-                </td>
                 <td class="p-2 border-r">1</td>
                 <td class="p-2 border-r">111</td>
                 <td class="p-2 border-r">Bastón Trekking</td>
                 <td class="p-2 border-r">Trekking</td>
                 <td class="p-2 border-r">Los Leones</td>
-                <td>
-                    <a href="{{ route('products.show', [1]) }}" class="bg-blue-500 p-2 text-gray-600 hover:shadow-lg text-xs font-thin"><i class='far fa-eye' style='font-size:24px'></i></a>
-                    <a href="{{ route('products.edit', [2]) }}" class="bg-red-500 p-2 text-red-600 hover:shadow-lg text-xs font-thin"><i class='far fa-edit' style='font-size:24px'></i></a>
-                </td>
+                <td>Bastón de trekking ultralivianos, mango liso, antishock desbloqueable.</td>
+                <td>10</td>
+                <td>10000</td>
+                <td><a href="{{ route('products.show', [1]) }}" class="bg-blue-500 p-2 text-gray-600 hover:shadow-lg text-xs font-thin"><i class='far fa-eye' style='font-size:24px'></i></a>
+                    <a href="{{ route('products.edit', [1]) }}" class="bg-red-500 p-2 text-gray-600 hover:shadow-lg text-xs font-thin"><i class='far fa-edit' style='font-size:24px'></i></a>
+                    <a href="{{ route('products.destroy', [1]) }}" class="bg-red-500 p-2 text-red-600 hover:shadow-lg text-xs font-thin"><i class='fas fa-trash-alt' style='font-size:24px'></i></a></td>
             </tr>
             <tr class="bg-gray-100 text-center border-b text-sm text-gray-600">
-                <td class="p-2 border-r">
-                    <input type="checkbox">
-                </td>
                 <td class="p-2 border-r">2</td>
                 <td class="p-2 border-r">222</td>
                 <td class="p-2 border-r">Carpa 3 estaciones</td>
                 <td class="p-2 border-r">Camping</td>
                 <td class="p-2 border-r">Parque Arauco</td>
+                <td>Footsprint incluido + set de 10 estacas</td>
+                <td>20</td>
+                <td>100000</td>
                 <td>
                     <a href="{{ route('products.show', [2]) }}" class="bg-blue-500 p-2 text-gray-600 hover:shadow-lg text-xs font-thin"><i class='far fa-eye' style='font-size:24px'></i></a>
-                    <a href="{{ route('products.edit', [2]) }}" class="bg-red-500 p-2 text-red-500 hover:shadow-lg text-xs font-thin"><i class='far fa-edit' style='font-size:24px'></i></a>
+                    <a href="{{ route('products.edit', [2]) }}" class="bg-red-500 p-2 text-gray-600 hover:shadow-lg text-xs font-thin"><i class='far fa-edit' style='font-size:24px'></i></a>
+                    <a href="{{ route('products.destroy', [2]) }}" class="bg-red-500 p-2 text-red-600 hover:shadow-lg text-xs font-thin"><i class='fas fa-trash-alt' style='font-size:24px'></i></a>
                 </td>
             </tr>
             </tbody>
