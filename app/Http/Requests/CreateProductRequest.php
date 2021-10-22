@@ -25,12 +25,12 @@ class CreateProductRequest extends FormRequest
     {
         return [
             'id' => 'required|numeric|max:3|min:1',
-            'codigo' => 'required|numeric|max:6|min:3',
+            'codigo' => 'required|numeric|min:3|max:99999',
             'nombre' => 'required|string|max:200|min:1',
             'categoria' => 'required|string|max:200|min:1',
             'descripcion' => 'nullable|string|max:400|min:1',
-            'cantidad' => 'required|numeric|max:4|min:1',
-            'precio' => 'required|numeric|max:6|min:1',
+            'cantidad' => 'required|numeric|max:1000|min:1',
+            'precio' => 'required|numeric|min:1|max:10000000',
         ];
     }
 }
