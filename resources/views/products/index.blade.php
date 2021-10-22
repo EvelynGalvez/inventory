@@ -91,28 +91,31 @@
             </tr>
             </thead>
             <tbody>
+            {!! Form::open(['route' => 'products.index', 'method' => 'get']) !!}
             <tr class="bg-gray-50 text-center">
                 <td class="p-2 border-r">
+                    {{Form::text('id', $request->input('id'), ['style' => 'width:80px; margin-top: 30px;' ])}}
+                </td>
+                <td class="p-2 border-r">
+                    {{Form::text('codigo', null, ['style' => 'width:120px; margin-top: 30px;'])}}
+                </td>
+                <td class="p-2 border-r">
+                    {{Form::text('nombre', null, ['style' => 'width:200px; margin-top: 30px;' ])}}
+                </td>
+                <td class="p-2 border-r">
+                    {{Form::text('categoria', null, ['style' => 'width:200px; margin-top: 30px;' ])}}
+                </td>
+                <td class="p-2 border-r" style="padding-top: 38px">
+                    {{Form::select('sucursal', ['Los Leones' => 'Los Leones', 'Parque Arauco' => 'Parque Arauco', 'Mall Sport' => 'Mall Sport'], null, ['placeholder' => 'Selecciona sucursal...'], ['style' => 'width:200px; margin-top: 100px;'])}}
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
 
-                </td>
-                <td class="p-2 border-r">
-                    <input type="text" class="border p-1">
-                </td>
-                <td class="p-2 border-r">
-                    <input type="text" class="border p-1">
-                </td>
-                <td class="p-2 border-r">
-                    <input type="text" class="border p-1">
-                </td>
-                <td class="p-2 border-r">
-                    <input type="text" class="border p-1">
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>    <button class="p-2 pl-5 pr-5 bg-indigo-500 border-2 border-blue-500 text-white text-lg rounded-lg hover:bg-blue-500 hover:text-gray-100 focus:border-4 focus:border-blue-300">Consultar</button></td>
+                <td>    {{Form::submit('Consultar', ['style' => 'width:120px; margin-left: 15px;'])}}</td>
 
             </tr>
+            {!! Form::close() !!}
             <tr class="bg-gray-100 text-center border-b text-sm text-gray-600">
                 <td class="p-2 border-r">1</td>
                 <td class="p-2 border-r">111</td>
