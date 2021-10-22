@@ -91,18 +91,40 @@
             </tr>
             </thead>
             <tbody>
+            <tr class="bg-gray-50 text-center">
+                <td class="p-2 border-r">
+
+                </td>
+                <td class="p-2 border-r">
+                    <input type="text" class="border p-1">
+                </td>
+                <td class="p-2 border-r">
+                    <input type="text" class="border p-1">
+                </td>
+                <td class="p-2 border-r">
+                    <input type="text" class="border p-1">
+                </td>
+                <td class="p-2 border-r">
+                    <input type="text" class="border p-1">
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>    <button class="p-2 pl-5 pr-5 bg-indigo-500 border-2 border-blue-500 text-white text-lg rounded-lg hover:bg-blue-500 hover:text-gray-100 focus:border-4 focus:border-blue-300">Consultar</button></td>
+
+            </tr>
             <tr class="bg-gray-100 text-center border-b text-sm text-gray-600">
                 <td class="p-2 border-r">1</td>
                 <td class="p-2 border-r">111</td>
                 <td class="p-2 border-r">Bastón Trekking</td>
                 <td class="p-2 border-r">Trekking</td>
                 <td class="p-2 border-r">Los Leones</td>
-                <td>Bastón de trekking ultralivianos, mango liso, antishock desbloqueable.</td>
+                <td>Bastón de trekking ultraliviano</td>
                 <td>10</td>
                 <td>10000</td>
-                <td><a href="{{ route('products.show', [1]) }}" class="bg-blue-500 p-2 text-gray-600 hover:shadow-lg text-xs font-thin"><i class='far fa-eye' style='font-size:24px'></i></a>
-                    <a href="{{ route('products.edit', [1]) }}" class="bg-red-500 p-2 text-gray-600 hover:shadow-lg text-xs font-thin"><i class='far fa-edit' style='font-size:24px'></i></a>
-                    <a href="{{ route('products.destroy', [1]) }}" class="bg-red-500 p-2 text-red-600 hover:shadow-lg text-xs font-thin"><i class='fas fa-trash-alt' style='font-size:24px'></i></a></td>
+                <td><a href="{{ route('products.show', [1]) }}" class="bg-blue-500 p-2 text-gray-600 hover:shadow-lg text-xs font-thin"><i class='far fa-eye' style='font-size:14px'></i></a>
+                    <a href="{{ route('products.edit', [1]) }}" class="bg-red-500 p-2 text-gray-600 hover:shadow-lg text-xs font-thin"><i class='far fa-edit' style='font-size:14px'></i></a>
+                    <a href="{{ route('products.destroy', [1]) }}" class="bg-red-500 p-2 text-red-600 hover:shadow-lg text-xs font-thin"><i class='fas fa-trash-alt' style='font-size:14px'></i></a></td>
             </tr>
             <tr class="bg-gray-100 text-center border-b text-sm text-gray-600">
                 <td class="p-2 border-r">2</td>
@@ -110,13 +132,13 @@
                 <td class="p-2 border-r">Carpa 3 estaciones</td>
                 <td class="p-2 border-r">Camping</td>
                 <td class="p-2 border-r">Parque Arauco</td>
-                <td>Footsprint incluido + set de 10 estacas</td>
+                <td>Footsprint incluido</td>
                 <td>20</td>
                 <td>100000</td>
                 <td>
-                    <a href="{{ route('products.show', [2]) }}" class="bg-blue-500 p-2 text-gray-600 hover:shadow-lg text-xs font-thin"><i class='far fa-eye' style='font-size:24px'></i></a>
-                    <a href="{{ route('products.edit', [2]) }}" class="bg-red-500 p-2 text-gray-600 hover:shadow-lg text-xs font-thin"><i class='far fa-edit' style='font-size:24px'></i></a>
-                    <a href="{{ route('products.destroy', [2]) }}" class="bg-red-500 p-2 text-red-600 hover:shadow-lg text-xs font-thin"><i class='fas fa-trash-alt' style='font-size:24px'></i></a>
+                    <a href="{{ route('products.show', [2]) }}" class="bg-blue-500 p-2 text-gray-600 hover:shadow-lg text-xs font-thin"><i class='far fa-eye' style='font-size:14px'></i></a>
+                    <a href="{{ route('products.edit', [2]) }}" class="bg-red-500 p-2 text-gray-600 hover:shadow-lg text-xs font-thin"><i class='far fa-edit' style='font-size:14px'></i></a>
+                    <a href="{{ route('products.destroy', [2]) }}" class="bg-red-500 p-2 text-red-600 hover:shadow-lg text-xs font-thin"><i class='fas fa-trash-alt' style='font-size:14px'></i></a>
                 </td>
             </tr>
             </tbody>

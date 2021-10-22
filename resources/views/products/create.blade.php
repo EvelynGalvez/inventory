@@ -26,7 +26,7 @@
     {{Form::text('categoria', null, ['style' => 'width:200px; margin-top: 30px;' ])}}
 
     {{Form::label('sucursal', 'Sucursal', ['style' => 'margin-left: 5px;' ])}}
-    {{Form::select('sucursal', ['1' => 'Los Leones', '2' => 'Parque Arauco'], null, ['placeholder' => 'Selecciona sucursal...'], ['style' => 'width:200px; margin-top: 30px;'])}}
+    {{Form::select('sucursal', ['1' => 'Los Leones', '2' => 'Parque Arauco', '3' => 'Mall Sport'], null, ['placeholder' => 'Selecciona sucursal...'], ['style' => 'width:200px; margin-top: 30px;'])}}
 
     <br>
 
