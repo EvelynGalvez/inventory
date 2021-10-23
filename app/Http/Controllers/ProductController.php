@@ -47,7 +47,16 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        //
+        $id = '1';
+        $codigo = '111';
+        $nombre = 'Bastón Trekking';
+        $categoria = 'Trekking';
+        $sucursal = 'Los Leones';
+        $descripcion = 'Bastón de trekking ultraliviano';
+        $cantidad = '10';
+        $precio = '10000';
+
+        return view('products.show') ->with(compact('id', 'codigo', 'nombre', 'categoria', 'sucursal', 'descripcion', 'cantidad', 'precio' ));
     }
 
     /**
@@ -81,6 +90,6 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        //
+        dd($id);
     }
 }

@@ -97,16 +97,16 @@
                     {{Form::text('id', $request->input('id'), ['style' => 'width:80px; margin-top: 30px;' ])}}
                 </td>
                 <td class="p-2 border-r">
-                    {{Form::text('codigo', null, ['style' => 'width:120px; margin-top: 30px;'])}}
+                    {{Form::text('codigo', $request->input('codigo'), ['style' => 'width:120px; margin-top: 30px;'])}}
                 </td>
                 <td class="p-2 border-r">
-                    {{Form::text('nombre', null, ['style' => 'width:200px; margin-top: 30px;' ])}}
+                    {{Form::text('nombre', $request->input('nombre'), ['style' => 'width:200px; margin-top: 30px;' ])}}
                 </td>
                 <td class="p-2 border-r">
-                    {{Form::text('categoria', null, ['style' => 'width:200px; margin-top: 30px;' ])}}
+                    {{Form::text('categoria', $request->input('categoria'), ['style' => 'width:200px; margin-top: 30px;' ])}}
                 </td>
                 <td class="p-2 border-r" style="padding-top: 38px">
-                    {{Form::select('sucursal', ['Los Leones' => 'Los Leones', 'Parque Arauco' => 'Parque Arauco', 'Mall Sport' => 'Mall Sport'], null, ['placeholder' => 'Selecciona sucursal...'], ['style' => 'width:200px; margin-top: 100px;'])}}
+                    {{Form::select('sucursal', ['1' => 'Los Leones', '2' => 'Parque Arauco', '3' => 'Mall Sport'], $request->input('sucursal'), ['placeholder' => 'Selecciona sucursal...'], ['style' => 'width:200px; margin-top: 100px;'])}}
                 </td>
                 <td></td>
                 <td></td>
@@ -127,7 +127,7 @@
                 <td>10000</td>
                 <td><a href="{{ route('products.show', [1]) }}" class="bg-blue-500 p-2 text-gray-600 hover:shadow-lg text-xs font-thin"><i class='far fa-eye' style='font-size:14px'></i></a>
                     <a href="{{ route('products.edit', [1]) }}" class="bg-red-500 p-2 text-gray-600 hover:shadow-lg text-xs font-thin"><i class='far fa-edit' style='font-size:14px'></i></a>
-                    <a href="{{ route('products.destroy', [1]) }}" class="bg-red-500 p-2 text-red-600 hover:shadow-lg text-xs font-thin"><i class='fas fa-trash-alt' style='font-size:14px'></i></a></td>
+                    {!! Form::open(['route' => ['products.destroy', 1], 'method'=> 'delete']) !!}{{Form::submit('Eliminar')}} {!!Form::close()!!}  </td>
             </tr>
             <tr class="bg-gray-100 text-center border-b text-sm text-gray-600">
                 <td class="p-2 border-r">2</td>
