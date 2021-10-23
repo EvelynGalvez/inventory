@@ -37,8 +37,8 @@
                     <input class="border py-2 px-3 text-grey-800" type="text" name="last_name" id="last_name" value="{{$precio}}">
                 </div>
 
-
             </form>
+
         </div>
     </div>
 

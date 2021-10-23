@@ -141,7 +141,7 @@
                 <td>
                     <a href="{{ route('products.show', [2]) }}" class="bg-blue-500 p-2 text-gray-600 hover:shadow-lg text-xs font-thin"><i class='far fa-eye' style='font-size:14px'></i></a>
                     <a href="{{ route('products.edit', [2]) }}" class="bg-red-500 p-2 text-gray-600 hover:shadow-lg text-xs font-thin"><i class='far fa-edit' style='font-size:14px'></i></a>
-                    <a href="{{ route('products.destroy', [2]) }}" class="bg-red-500 p-2 text-red-600 hover:shadow-lg text-xs font-thin"><i class='fas fa-trash-alt' style='font-size:14px'></i></a>
+                    {!! Form::open(['route' => ['products.destroy', 2], 'method'=> 'delete']) !!}{{Form::submit('Eliminar')}} {!!Form::close()!!}
                 </td>
             </tr>
             </tbody>
