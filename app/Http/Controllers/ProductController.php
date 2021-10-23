@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateProductRequest;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class ProductController extends Controller
 {
@@ -90,6 +91,7 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        dd($id);
+        Alert::success('Registro eliminado', 'El registro ' . $id . ' fue eliminado exitosamente');
+        return redirect('/products');
     }
 }
